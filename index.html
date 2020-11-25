@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GIFOS</title>
+</head>
+<body>
+    <nav>
+        <!-- ESTE DIV CONTIENE IMG HAMBURGUESA -->
+        <div class="icon-menu">
+            <img src="/imagenes/burger.svg" id="hamburguer" alt="img_hambuerguer">
+        </div>
+        <!-- IMG LOGO -->
+        <img src="/imagenes/logo-mobile.svg" alt="imagen_logo" class="img_logo">
+        <!-- BARRA DE NAVEGACION -->
+        <div class="cont-nav" id="menu">
+            <ul class="ul_nav">
+                <a type="button" id="modoNocturno">MODO NOCTURNO</a>
+                <a href="/favoritos/favoritos.html">FAVORITOS</a>
+                <a href="/favoritos/favoritos.html">MIS GIFOS</a>
+                <img src="/imagenes/button-crear-gifo.svg" alt="plus_nav" class="img_plus">
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <section class="section_h1">
+            <h1>Inspírate, busca, guarda, y crea los mejores <span class="gifos_h1">GIFOS</span></h1>
+            <div class="img_search">
+                <img src="/imagenes/ilustra_header.svg" alt="" class="img_nenes">
+                <div class="div_input">
+                    <!-- BUSCADOR -->
+                    <input type="text" class="search" id="search" placeholder="Busca GIFOS y más">
+                    <!-- IMAGEN LUPA -->
+                    <img src="/imagenes/icon-search.svg" alt="imagen lupa" class="img_lupa" id="img_lupa">
+                </div>
+            </div>
+            <section class="section_opciones">
+                <div class="box-search" id="box-search">
+                    <div>
+                        <img src="imagenes/icon-search.svg" alt="" class="lupa_opciones">
+                        <p class="p_opciones" id="recomendacion"></p>
+                    </div>
+                    <div>
+                        <img src="imagenes/icon-search.svg" alt="" class="lupa_opciones">
+                        <p class="p_opciones" id="recomendacion1"></p>
+                    </div>
+                    <div>
+                        <img src="imagenes/icon-search.svg" alt="" class="lupa_opciones">
+                        <p class="p_opciones" id="recomendacion2"></p>
+                    </div>
+                    <div>
+                        <img src="imagenes/icon-search.svg" alt="" class="lupa_opciones">
+                        <p class="p_opciones" id="recomendacion3"></p>
+                    </div>
+            </section>
+        </section>
+    </header>
+    <main>
+        <section class="trending_sect">
+            <h2>Trending:</h2>
+            <p>Reactions, Entertainment, Sports, Stickers, Artists</p>
+        </section>
+        <section>
+                <div class="section_encontrados" id="section_encontrados">
+                <div class="div_titulo_encontrados" id="div_titulo_encontrados">
+                    <h2 class="titulo_encontrado" id="titulo_encontrado"></h2>
+                </div>
+                <div class="div_img_encontradas" id="div_img_encontradas">
+                    <!-- ACA VIENEN LAS IMAGENES LLAMADAS POR LA API -->
+                </div>
+                <div class="contain_button" id="contain_button">
+                    
+                </div>
+            </div>
+        </section>
+       
+        <section class="last_gifos" id="last_gifos">
+            <h2>Trending GIFOS</h2>
+            <p>Mira los últimos</p>
+            <p>GIFOS de nuestra comunidad.</p>
+        
+            <div id="carrusel" class="container-carrusel">
+                <!-- LEFT ARROW -->
+                <img src="/imagenes/button-slider-left.svg" alt="icon" id="leftslider" class="hover">
+                <div id = "imagenesSlider" class="container-imgSlider">
+                    <!-- IMAGEN 1 -->
+                    <div class="gifo_hover img">
+                        <img src="" alt="" id="imagenCarrusel">
+                        <div class="opciones hover">  
+                            <img src="/imagenes//icon-max-normal.svg" alt="img maximizar" id="max">
+                            <img src="/imagenes//icon-download.svg" alt="img download" id="download">
+                            <img src="/imagenes//icon-fav.svg" alt="img fav" id="fav1" class="favoritosClass">
+                        </div>
+                    </div>
+                    <!-- IMAGEN 2 -->
+                    <div class="gifo_hover">
+                        <img src="" alt="" id="imagenCarrusel1" class="hover">
+                        <div class="opciones hover">
+                            <img src="/imagenes//icon-max-normal.svg" alt="img maximizar" id="max">
+                            <img src="/imagenes//icon-download.svg" alt="img download" id="download">
+                            <img src="/imagenes//icon-fav.svg" alt="img fav" id="fav2" class="favoritosClass">
+                        </div>
+                    </div>
+                    <!-- IMAGEN 3 -->
+                    <div class="gifo_hover hover">
+                        <img src="" alt="" id="imagenCarrusel2" class="hover">
+                        <div class="opciones hover">
+                            <img src="/imagenes//icon-max-normal.svg" alt="img download" id="max">
+                            <img src="/imagenes//icon-download.svg" alt="img download" id="download">
+                            <img src="/imagenes//icon-fav.svg" alt="img fav" id="fav3" class="favoritosClass">
+                        </div>
+                    </div>
+                </div>
+                <!-- RIGHT ARROW -->
+                <img src="/imagenes//Button-Slider-right.svg" alt="icon" id="rightSlider" class="hover">
+            </div>
+            <!-- OVERLAY -->
+        </section>
+        <!-- FOOTER -->
+    <footer>
+        <div class="footer_1">
+            <p>Compartir en:</p>
+            <ul class="ul_footer">
+                <li><img src="/imagenes/icon_facebook.svg" alt="icon_facebook"></li>
+                <li><img src="/imagenes/icon-twitter.svg" alt="icon_twitter"></li>
+                <li><img src="/imagenes/icon_instagram.svg" alt="icon_instagram"></li>
+            </ul>
+        </div>
+            <p class="last_p">© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+    </main>
+    <script src="functions.js"></script>
+</body>
+</html>
+
+<!-- PREGUNTAS PARA GABI:
+1: CUANDO LE PONGO CLASS "OPCIONES" A LOS GIFS ENCONTRADOS POR ALGUNA RAZÓN ME LOS DEJA DE BUSCAR
+2: BOTON ME MUESTRE 12 POSICIONES MAS DEL ARRAY -->

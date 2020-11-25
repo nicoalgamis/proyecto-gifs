@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Favoritos</title>
+</head>
+<body>
+    <nav>
+        <!-- ESTE DIV CONTIENE IMG HAMBURGUESA -->
+        <div class="icon-menu">
+            <img src="/imagenes/burger.svg" id="hamburguer" alt="img_hambuerguer">
+        </div>
+        <!-- IMG LOGO -->
+        <img src="/imagenes/logo-mobile.svg" alt="imagen_logo" class="img_logo">
+        <div class="cont-menu" id="menu">
+            <ul class="ul_nav">
+                <a type="button" id="modoNocturno">MODO NOCTURNO</a>
+                <a href="../index.html">HOME</a>
+                <a href="../gifos/gifos.html">MIS GIFOS</a>
+                <img src="/imagenes/button-crear-gifo.svg" alt="plus_nav" class="img_plus">
+            </ul>
+        </div>
+    <header>
+        <div class="h1_fav">
+            <img src="../imagenes/icon-favoritos.svg" alt="icon_corazon" class="img_corazon">
+            <h1>Favoritos</h1>
+        </div>
+    </header>
+    <div class="img_favs">
+
+    </div>
+    <div class="boddy_fav">
+
+    </div>
+    <!-- BUTTON -->
+    <div class="save_gifos">
+        <img src="../imagenes/icon-fav-sin-contenido.svg" alt="">
+        <p>"¡Guarda tu primer GIFO en Favoritos</p>
+        <p>para que se muestre aquí!"</p>
+    </div>
+    <section class="last_gifos" id="last_gifos">
+        <h2>Trending GIFOS</h2>
+        <p>Mira los últimos </p>
+           <p> GIFOS de nuestra comunidad.</p>
+           <div id="carrusel" class="container-carrusel">
+            <!-- LEFT ARROW -->
+            <img src="/imagenes/button-slider-left.svg" alt="icon" id="leftslider" class="hover">
+            <div id = "imagenesSlider" class="container-imgSlider">
+                <!-- IMAGEN 1 -->
+                <div class="gifo_hover img">
+                    <img src="" alt="" id="imagenCarrusel">
+                    <div class="opciones hover">  
+                        <img src="/imagenes//icon-max-normal.svg" alt="img maximizar" id="max">
+                        <img src="/imagenes//icon-download.svg" alt="img download" id="download">
+                        <img src="/imagenes//icon-fav.svg" alt="img fav" id="fav">
+                    </div>
+                </div>
+                <!-- IMAGEN 2 -->
+                <div class="gifo_hover">
+                    <img src="" alt="" id="imagenCarrusel1" class="hover">
+                    <div class="opciones hover">
+                        <img src="/imagenes//icon-max-normal.svg" alt="img maximizar" id="max">
+                        <img src="/imagenes//icon-download.svg" alt="img download" id="download">
+                        <img src="/imagenes//icon-fav.svg" alt="img fav" id="fav">
+                    </div>
+                </div>
+                <!-- IMAGEN 3 -->
+                <div class="gifo_hover hover">
+                    <img src="" alt="" id="imagenCarrusel2" class="hover">
+                    <div class="opciones hover">
+                        <img src="/imagenes//icon-max-normal.svg" alt="img download" id="max">
+                        <img src="/imagenes//icon-download.svg" alt="img download" id="download">
+                        <img src="/imagenes//icon-fav.svg" alt="img fav" id="fav">
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT ARROW -->
+            <img src="/imagenes//Button-Slider-right.svg" alt="icon" id="rightSlider" class="hover">
+        </div>
+    </section>
+    <footer>
+        <div class="footer_1">
+            <p>Compartir en:</p>
+            <ul class="ul_footer">
+                <li><img src="../imagenes/icon_facebook.svg" alt="icon_facebook"></li>
+                <li><img src="../imagenes/icon-twitter.svg" alt="icon_twitter"></li>
+                <li><img src="../imagenes/icon_instagram.svg" alt="icon_instagram"></li>
+            </ul>
+        </div>
+            <p class="last_p">© GIFOS 2020 All Rights Reserved.</p>
+
+    </footer>
+    <script src="favoritos.js"></script>
+</body>
+</html>

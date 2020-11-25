@@ -1,0 +1,204 @@
+:root{
+    font-size: calc(8px + 0.55vw);
+}
+.nav{
+    height: 80vh;
+
+}
+.icon-menu img{
+    position: absolute;
+    margin-left: 75%;
+    padding-top: 10%;
+    width: 7%;
+}
+.ul_nav{
+    position: absolute;
+    background: rgba(87,46,229,0.90);
+    left: 0;
+    top: 10%;
+    width: 88%;
+    height: 100vh; 
+    transform: translateX(-100%);
+}
+.ul_nav2{
+    transform: translateX(0%);
+}
+.ul_nav a{
+    text-align: center;
+    padding-top: 16%;
+    padding-left: 32%;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    line-height: 0;   
+    margin-top: 5%;
+}
+.img_plus{
+    display: none;
+}
+
+.img_logo{
+    width: 15%;
+    padding-left: 5%;
+}
+header{
+    height: 80vh;
+}
+.section_h1{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    margin: auto;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #572EE5;
+    line-height: 53px;
+    width: 73%;
+}
+.gifos_h1{
+    color: #50E3C2;
+}
+.section_h1{
+    padding-top: 5%;
+}
+// IMAGEN Y BUSCADOR
+.img_nenes{
+    width: 72.8%;
+}
+.div_input{
+    text-align: center;
+}
+.div_input input{
+    border: 1px solid #572EE5;
+    border-radius: 27px;
+    border-radius: 27px;
+    outline: none;
+    z-index: -1;
+    width: 80%;
+}
+// LUPA
+.img_lupa{
+    width: 4%;
+    padding-top: 1%;
+    z-index: 2;
+    margin-left: -6%;
+}
+//barra de busqueda
+
+.box-search{
+    margin-left: 50%;
+    height: 23vh;
+    width: 85%;
+    border: 1px solid black;
+    border-radius: 27px;
+    transform: translateX(-50%);
+    overflow: hidden;
+    display: none;
+    &.oculto{
+        display: block;
+    }
+}
+    
+    .lupa_opciones{
+        padding-top: 3%;
+        padding-left: 2%;
+        display: grid;
+        
+        &.oculto{
+            display: block;
+        }
+    }
+.p_opciones{
+    position: absolute;
+    width: 90%;
+    height: 0;
+    margin: auto;
+    margin-top: -6%;
+    text-align: start;
+    padding-left: 11%;
+}
+
+@media screen and (min-width: 1000px){
+    header{
+        height: 100vh;
+    }
+    .icon-menu img{
+        display: none;
+    }
+    .img_logo{
+        position: absolute;
+        width: 4%;
+        top: 4%;
+    }
+    .cont-nav{
+        position: absolute;
+        margin: 1% 30% 0% 30%;    
+        justify-content: space-evenly;
+
+    }
+    .ul_nav{
+        display: contents;
+    }
+    .ul_nav a{
+        display: contents;
+        padding-top: 0%;
+        color: #000000;
+        font-weight: 100;
+        cursor: pointer;
+
+        font-size: 1rem;
+        color: #572EE5;
+        font-weight: 600;
+    }
+    .img_plus{
+        display: inline-block;
+        width: 4%;
+        margin-top: 3%;
+    }
+
+ 
+    .section_h1{
+        height: 90vh;
+    }
+    h1{
+        margin: auto;
+        font-size: 2.6rem;
+        width: 50%;
+    }
+
+    .img_nenes{
+        display: block;
+        width: 30%;
+        margin: auto;
+    }
+    .img_search input{
+        width: 40%;
+        height: 5vh;
+    }
+    // LUPA
+    .img_lupa{
+        cursor: pointer;
+        width: 1.5%;
+        margin-bottom: -0.3%;
+        margin-top: 2px;
+        margin-left: -3%;
+
+    }
+    //barra de busqueda
+    .box-search{
+        margin-left: 50%;
+        height: 27vh;
+        width: 40%;
+        border-radius: 30px;
+        border: 1px solid blue;
+        display: none;
+        &.oculto{
+            display: block;
+        }
+    }
+    .p_opciones{
+        padding-top: 1.5%;
+        color: #9CAFC3;
+    }
+}

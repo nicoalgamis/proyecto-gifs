@@ -1,0 +1,123 @@
+.trending_sect{
+    text-align: center;
+    height: 10vh;
+}
+.trending_sect h2{
+    color: #572EE5;
+    line-height: 25px;
+    font-size: 2rem;
+}
+.trending_sect p{
+    color: #572EE5;
+    line-height: 25px;
+    font-size: 1.5rem;
+    width: 50%;
+    margin: auto;
+}
+@media screen and (min-width: 769px){
+
+    body{
+        border-top: 3px solid #572EE5;
+        border-bottom: 3px solid #572EE5;
+        &.black{
+            background-color: #37383C;
+            border-color: #000000;
+        }
+    }
+    .boddy_fav{
+        height: 40vh;
+    }
+    .save_gifos{
+        text-align: center;
+        height: 40vh;
+    }
+    .save_gifos p{
+        color: 50E3C2;
+        font-weight: 600;
+        line-height: 10px;
+    }
+    .div_button button{
+        color: #572EE5;
+        border-radius: 35px;
+        width: 35%;
+        height: 16vh;
+    }
+    .div_button button p{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .last_gifos{
+        text-align: center;
+        background-color: #F3F5F8;
+        height: 80vh;
+        &.black{
+            background-color: #222326;
+        }
+
+    }
+    .last_gifos h2{
+        color: #572EE5;
+        font-size: 2rem;
+        padding-top: 15%;    
+    }
+    .last_gifos p{
+        line-height: 23px;
+        font-size: 1.6rem;
+        padding: 0 5% 0 5%;
+        line-height: 0;
+    }
+     // SECTION TRENDING GIFOS
+     .trending {
+        // margin-top: 25vh;
+        padding-top: 3%;
+        height: 80vh;
+    }
+    .trending h3{
+        font-size: 1.56rem;
+    }
+    .trending p{
+        font-size: 1.1rem;
+        display: contents;
+    }
+    .container-carrusel{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 5%;
+    }
+    .container-carrusel > img{
+        display: block;
+        height: 8vh;
+        margin-top: 12vh;
+    }
+    .container-carrusel > div{
+        width: 20vw;
+        height: 35vh;
+        flex-basis: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .opciones{
+        float: right;
+        display: flex;
+        position: absolute;
+    }
+    #rightSlider, #leftslider{
+        cursor: pointer;
+    }
+
+    .container-imgSlider > div{
+        display: block;
+        max-width: 100%;
+        width: 32%;
+        height: 100%;
+    }
+    .container-imgSlider img{
+        display: block;
+        height: 100%;
+    }
+    #imagenCarrusel{
+        width: 100%;
+    }
+}
