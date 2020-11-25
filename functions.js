@@ -15,9 +15,6 @@ function addFavouritesEvent(){
 
     for (var i = 0; i < elements.length; i++) {
 
-        elements[i].addEventListener('click', myFunction, false);
-
-
         elements[i].addEventListener('click', (e) => { //e = event
             
             const imageId = e.target.getAttribute("data-reference-id");
